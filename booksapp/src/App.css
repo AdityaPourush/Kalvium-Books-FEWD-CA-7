@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Doodle+Shadow&display=swap');
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1vmin 1vmax;
+}
+
+#logo-text{
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    color: black;
+    text-decoration:underline;
+    font-size: 5vmin;
+}
+
+#logo-img{
+    width: 11vmin;
+}
+
+#search-box:focus{
+    border: none;
+    outline: none;
+}
+#search-box{
+    width: 40vw;
+    height: 5vmin;
+    font-size: 3vmin;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#profile-container{
+    padding-right: 1vw;
+}
+
+#profile-container button{
+    height: 5.5vmin;
+    width: 10vmax;
+    background-color:blueviolet;
+    color: white;
+    font-size: 3vmin;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+}
+
+#profile-button:hover{
+    background-color: blue;
+}
+
+
+
+#star1{
+    width: 3.8vh;
+}
+
+.books-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(228, 228, 228);
+}
+
+.book{
+    width: 25vw;
+    margin: 3vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1vmin;
+    border-radius: 10px;
+    background-color: cornsilk;
+}
+
+.book:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.book>img{
+    width: 10vw;
+    height: 30vh;
+    margin: 1vh;
+    border-radius: 5px;
+}
+
+.book p{
+    font-size: 3vmin;
+}
+
+.book span{
+    margin-left: 1vmax;
+}
+
+#backhome-text{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: black;
+}
+
+.form{
+    border: 1px solid black;
+    width: 50vw;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 1vmax;
+}
+
+.form h1{
+    text-align: center;
+}
+
+.form label{
+    display: block;
+    margin-top: 1.7vmax;
+}
+
+.form input{
+    width: 90%;
+    padding: 1vmin;
+    font-size: 2.5vmin;
+    font-weight: 700;
+    display: flex;
+}
+
+.form p{
+    font-size: 2vmin;
+    color: red;
+}
+
+.form fieldset{
+    padding: 1vmax;
+}
+
+.buttons-container{
+    margin-top: 2vmax;
+}
+
+.buttons-container p{
+    color: black;
+}
+
+.buttons-container input{
+    width: 70%;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    margin-top: 1vh;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 1vh;
+}
+
+.buttons-container input:hover{
+    background-color: rgb(174, 0, 255);
+    cursor: pointer;
+}
+
+.buttons-container button{
+    width: 10vmax;
+    height: 5vmin;
+    margin-top: 3vmax;
+    background-color: rgb(135, 216, 219);
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 3vmin;
+}
+
+.buttons-container button:hover{
+    background-color: rgb(67, 249, 255);
+}
+
+@media only screen and (max-width: 600px) {
+    .form{
+        width: 90vw;
+    }
+
+    .book{
+        width: 90vw;
+    }
+
+    .book>img{
+        width: 50vw;
+        height: 45vh;
+    }
+
+    #search-box{
+        width: 60vw;
+        margin: 1vh;
+    }
+
+    #profile-container button{
+        height: 7vmin;
+        width: 15vmax;
+    }
+
+    .book p{
+        font-size: 3vmax;
+    }
+
+    .form input{
+        font-size: 4vmin;
+    }
+    .form p{
+        font-size: 3vmin;
+    }
+
+    .buttons-container button{
+        width: 10vmax;
+        height: 7vmin;
+        font-size: 4vmin;
+    }
+  }
